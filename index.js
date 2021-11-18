@@ -1,6 +1,7 @@
 const axios = require('axios');
 const mongoose = require('mongoose');
 const config = require('config');
+const cors = require('cors');
 const bugs = require('./routes/bugs');
 const path = require('path');
 const express = require('express');
@@ -16,6 +17,7 @@ mongoose.connect(config.get('mongoURI'))
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/errors', bugs);
 

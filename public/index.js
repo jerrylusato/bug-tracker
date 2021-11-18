@@ -4,7 +4,7 @@ const bugContainer = document.querySelector('.bugs-container');
 
 console.log(message, stack);
 
-fetch('http://localhost:5000/api/errors')
+fetch('https://wadudu.herokuapp.com/api/errors')
 .then(res => res.json())
 .then(bugs => {
     bugs.forEach(bug => {

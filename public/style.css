@@ -36,3 +36,8 @@ header h1 {
 main {
     padding: 20px;
 }
+.bugs-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

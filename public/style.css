@@ -50,6 +50,9 @@ main {
 .bug h3 {
     border-bottom: 1px solid #ccc;
     padding: 10px;
+    background-color: rgb(238, 180, 238);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 .bug p {

@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 body, html {
     font-family: 'Poppins', sans-serif;
 }
@@ -20,10 +21,12 @@ body {
 }
 
 header {
-    background: rgb(27, 164, 228);
     padding: 20px;
     color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: -webkit-linear-gradient(top,#654a86,#534292);
+    background: linear-gradient(to bottom,#654a86,#534292);
+    background-color: #534292;
 }
 
 header h1 {

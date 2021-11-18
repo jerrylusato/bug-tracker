@@ -8,6 +8,8 @@ fetch('https://wadudu.herokuapp.com/api/errors')
 .then(res => res.json())
 .then(bugs => {
     bugs.forEach(bug => {
+        const bugElement = document.createElement('div');
+        bugElement.className = 'bug'
         const h1 = document.createElement('h1');
         h1.innerHTML = bug.message;
         h1.style.color = "red";
@@ -15,8 +17,9 @@ fetch('https://wadudu.herokuapp.com/api/errors')
         p.style.color = "green"; 
         p.style.fontWeight = "bold";
         p.innerHTML = bug.stack;
-        bugContainer.appendChild(h1);
-        bugContainer.appendChild(p);
+        bugElement.appendChild(h1);
+        bugElement.appendChild(p);
+        bugContainer.appendChild(bugElement);
     });
 })
 

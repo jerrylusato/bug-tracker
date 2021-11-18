@@ -6,13 +6,12 @@
     box-sizing: border-box;
 }
 
-
 body, html {
     font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #ccc;
+    background-color:#fff;
 }
 
 .fa-spider {
@@ -36,8 +35,23 @@ header h1 {
 main {
     padding: 20px;
 }
+
 .bugs-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
+
+.bug {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+.bug h1 {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.bug p {
+    padding: 10px;
+
+};

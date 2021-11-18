@@ -45,6 +45,7 @@ main {
 .bug {
     border: 1px solid #ccc;
     margin-bottom: 5px;
+    border-radius: 10px;
 }
 .bug h1 {
     border-bottom: 1px solid #ccc;

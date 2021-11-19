@@ -10,14 +10,14 @@ fetch('https://wadudu.herokuapp.com/api/errors')
     bugs.forEach(bug => {
         const bugElement = document.createElement('div');
         bugElement.className = 'bug'
-        const h3 = document.createElement('h3');
-        h3.innerHTML = bug.message;
-        h3.style.color = "red";
+        const h4 = document.createElement('h4');
+        h4.innerHTML = bug.message;
+        h4.style.color = "red";
         const p = document.createElement('p');
         p.style.color = "green"; 
-        p.style.fontWeight = "bold";
+        p.style.fontWeight = "normal";
         p.innerHTML = bug.stack;
-        bugElement.appendChild(h3);
+        bugElement.appendChild(h4);
         bugElement.appendChild(p);
         bugContainer.appendChild(bugElement);
     });

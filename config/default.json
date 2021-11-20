@@ -1,4 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://mjthecoder:coolhand@staging.ccigt.mongodb.net/bugs",
+    "mongoURI": "",
     "secret": ""
 }
